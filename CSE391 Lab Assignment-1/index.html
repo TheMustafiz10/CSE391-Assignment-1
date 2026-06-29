@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page | CSE 391</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inline-demo {
+            background-color: #f0f7ff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .footer-small {
+            font-size: 0.9rem;
+            color: #4a4a5e;
+        }
+
+        
+        @media (max-width: 600px) {
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+            tr {
+                margin-bottom: 0.8rem;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="themeCheckbox" class="theme-checkbox" aria-label="Toggle dark mode">
+
+    <div class="full-page" id="mainContainer">
+
+        <!-- Fixed Header-->
+        <header class="fixed-header">
+            <div class="header-content">
+                <div class="name-title">
+                    <h1>MD Mustafizur Rahman</h1>
+                    <p class="subhead">CSE 391 · Programming for the Internet</p>
+                </div>
+                <div class="header-right">
+                    <img src="IMG_2853.jpg" width="120" height="120" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="48" fill="%232b5b84"/%3E%3Ccircle cx="50" cy="40" r="20" fill="%23f4d03f"/%3E%3Ccircle cx="35" cy="35" r="6" fill="%231a1a1a"/%3E%3Ccircle cx="65" cy="35" r="6" fill="%231a1a1a"/%3E%3Cpath d="M30 65 Q50 80 70 65" stroke="%23f1c40f" stroke-width="6" fill="none" stroke-linecap="round"/%3E%3C/svg%3E"
+                    alt="Profile photo" class="profile-photo">
+                    <label for="themeCheckbox" class="toggle-btn">
+                        <span class="mode-icon">🌙</span> <span class="mode-text">Dark mode</span>
+                    </label>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#personal">Personal</a>
+                <a href="#education">Education</a>
+                <a href="#quotes">Quotes</a>
+                <a href="#table-section">Table</a>
+                <a href="#contact">Contact</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="experiences.html">Experience</a>
+                <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>
+                <a href="https://discord.gg/NHsMA6AFz" target="_blank">CSE 391 Discord</a>
+            </nav>
+        </header>
+
+        <div class="header-spacer"></div>
+
+
+        <!-- Personal Info sections -->
+        <section id="personal">
+            <h2>👤 Personal Info</h2>
+            <div class="card">
+                <p><strong>Name:</strong> MD Mustafizur Rahman</p>
+                <p><strong>Background:</strong> Born in Puran Dhaka, currently in my 4th year of CSE. I love <em>sleeping</em>, <span style="color: #c0392b;">photo collection</span>, and exploring new technologies. </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>🎓 Education</h2>
+            <div class="card">
+                <p><strong>University:</strong> BRAC University (2022-2026)</p>
+                <p><strong>College:</strong> Dhaka Imperial College (2018-2020)</p>
+                <p><strong>School:</strong> Ideal School (2009-2018)</p>
+            </div>
+        </section>
+
+        <section id="tech-detail">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="card">
+                <p><strong>AI:</strong> Exploring intelligent tools and practical applications.</p>
+                <p><strong>Web Dev:</strong> Building responsive websites with HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>🔗 Categorized Links</h2>
+            <div class="card link-grid">
+                <div><strong>Hobbies</strong><br><a href="#hobby-detail">Photo collection</a>, <a href="#hobby-detail">traveling</a></div>
+                <div><strong>Sports</strong><br><a href="#sport-detail">Football</a>, <a href="#sport-detail">Swimming</a></div>
+                <div><strong>Extracurricular</strong><br><a href="#extra-detail">Music</a>, <a href="#extra-detail">Movie watching</a></div>
+                <div><strong>Technical Skills</strong><br><a href="#tech-detail">AI</a>, <a href="#tech-detail">Web Dev</a></div>
+            </div>
+
+            
+            <div style="margin-top: 0.5rem;">
+                <a href="#personal">back to personal</a> ·
+                <a href="#table-section">to table</a>
+            </div>
+        </section>
+
+
+
+        <!-- favorite quote & list -->
+        <section id="quotes">
+            <h2>📖 Favorite Quote & BookList</h2>
+            <div class="card">
+                <blockquote>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.” – Steve Jobs</blockquote>
+                <h3>📚 Top 5 books</h3>
+                <ol>
+                    <li><em>The Legacy of Blood</em></li>
+                    <li><strong>Inside Raw</strong></li>
+                    <li>Legacy of Ashes: The History of the CIA</li>
+                    <li>Mind Wars</li>
+                    <li>Spy Stories</li>
+                </ol>
+            </div>
+        </section>
+
+
+
+        <!-- Table Section  -->
+        <section id="table-section">
+            <h2>📊 Schedule & Info</h2>
+            <div class="card table-responsive">
+                <table>
+                    <thead>
+                        <tr><th>Day</th><th>Activity</th><th>Details</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sunday</td><td>CSE 391</td><td>Theory · 11:00–2:00</td></tr>
+                        <tr><td>Tuesday</td><td>CSE 391</td><td>Lab · 2:00–5:00</td></tr>
+                        <tr><td rowspan="2">Friday</td><td>Study</td><td>Project & Thesis work</td></tr>
+                        <tr><td>Extracurricular</td><td>Friends meetup</td></tr>
+                        <tr><td>Saturday</td><td colspan="2">Job Preparation</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+
+
+        <!--Contact Form -->
+        <section id="contact">
+            <h2>📬 Contact</h2>
+            <div class="card modern-form">
+                <form action="mailto:alex.r@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">📧 Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+        
+        <section style="margin: 1.5rem 0;">
+            <h2>Favourite Images</h2>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                <div><img src="award.jpg" alt="local image (svg)" style="width:100px;height:100px;border-radius:12px;"></div>
+                <div><img src="https://images.pexels.com/photos/38245149/pexels-photo-38245149.jpeg" alt="web image" style="width:100px;height:100px;border-radius:12px;"></div>
+            </div>
+            <!-- embedded hyperlink in a sentence -->
+            <p>Check out my <a href="#contact">contact section</a> for any questions, or visit <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a> for more info.</p>
+            
+            <!-- Additional hyperlinks -->
+            <div style="margin-top: 1rem; padding: 1rem; background: #f0f4f8; border-radius: 12px;">
+                <h4 style="margin-bottom: 0.5rem;">Useful Links</h4>
+                <p>
+                    <a href="https://www.dailyamardesh.com/" target="_blank">The Daily Amar Desh</a><br>
+                    <a href="https://www.imdb.com/title/tt4779682/" target="_blank">The Megh (IMDB)</a><br>
+                    <a href="https://www.sciencedirect.com/journal/neural-networks" target="_blank">Research Paper</a>
+                </p>
+            </div>
+        </section>
+
+
+        
+        <footer>
+            <div id="locationMod" class="footer-small">
+                <span id="locationDisplay">Loading location...</span> ·
+                <span id="lastModified">Loading date...</span>
+            </div>
+            <div style="margin-top: 0.5rem;">&copy; 2026 MD Mustafizur Rahman · All rights reserved.</div>
+        </footer>
+    </div>
+
+
+    
+    <script>
+        (function() {
+            const modSpan = document.getElementById('lastModified');
+            if (modSpan) {
+                const lastMod = new Date(document.lastModified);
+                const options = {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                };
+                modSpan.textContent = '📅 Last modified: ' + lastMod.toLocaleDateString('en-US', options);
+            }
+
+
+            const locationSpan = document.getElementById('locationDisplay');
+            if (locationSpan) {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        function(position) {
+                            const lat = position.coords.latitude;
+                            const lon = position.coords.longitude;
+                            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=10`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const address = data.address;
+                                    const city = address.city || address.town || address.village || address.county ||
+                                        'Unknown';
+                                    const country = address.country || 'Unknown';
+                                    locationSpan.textContent = ` ${city}, ${country}`;
+                                })
+                                .catch(() => {
+                                    locationSpan.textContent = 'Dhaka, Bangladesh';
+                                });
+                        },
+                        function() {
+                            locationSpan.textContent = 'Dhaka, Bangladesh';
+                        }, { timeout: 5000 }
+                    );
+                } else {
+                    locationSpan.textContent = 'Dhaka, Bangladesh';
+                }
+            }
+
+
+
+ 
+              // Dark & Light mode toggle
+            const checkbox = document.getElementById('themeCheckbox');
+            const modeText = document.querySelector('.mode-text');
+            const modeIcon = document.querySelector('.mode-icon');
+            
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    modeText.textContent = 'Light mode';
+                    modeIcon.textContent = '☀️';
+                } else {
+                    modeText.textContent = 'Dark mode';
+                    modeIcon.textContent = '🌙';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
